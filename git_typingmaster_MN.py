@@ -14,3 +14,15 @@ def main (page: ft.Page):
         "incomprensible", "psicologia",
         "responsabilidad"
     ]
+
+    total = 15
+
+    words = []
+    index = 0
+    mistakes = 0
+
+    word_label = ft.Text(size=25)
+    status_label = ft.Text()
+    progress_label = ft.Text()
+    accuracy_label = ft.Text()
+    input_box = ft.TextField()
