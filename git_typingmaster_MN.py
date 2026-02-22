@@ -66,3 +66,19 @@ def main (page: ft.Page):
             input_box.disabled = True
 
         page.update()
+        
+    start_button = ft.ElevatedButton("Reiniciar", on_click=lambda e: start_game())
+    submit_button = ft.ElevatedButton("Enviar", on_click=check_word)
+
+    page.add(
+        word_label,
+        input_box,
+        submit_button,
+        start_button,
+        status_label,
+        progress_label,
+        accuracy_label
+    )
+
+    start_game()
+ft.app(target=main)
