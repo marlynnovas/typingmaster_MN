@@ -1,4 +1,4 @@
-import flet as flet
+import flet as ft
 import random 
 
 def main (page: ft.Page):
@@ -66,7 +66,7 @@ def main (page: ft.Page):
             input_box.disabled = True
 
         page.update()
-        
+
     start_button = ft.ElevatedButton("Reiniciar", on_click=lambda e: start_game())
     submit_button = ft.ElevatedButton("Enviar", on_click=check_word)
 
